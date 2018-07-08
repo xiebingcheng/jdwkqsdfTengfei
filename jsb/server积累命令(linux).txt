@@ -1,0 +1,46 @@
+exec $SHELL  重启shell
+
+python版本管理软件 pyenv 
+
+pyenv install 2.7.14 安装指定的python版本
+
+pyenv versions 查看拥有的python版本
+
+pyenv global 2.7.14  把某个版本设置为全局使用
+
+pyenv local 2.7.14  只对当前所在目录生效
+
+
+nginx 
+
+sudo vi /etc/nginx/nginx.conf #主配置的文件
+
+sudo vim /etc/nginx/sites-enabled/default  #这个文件主要是配置server的
+
+sudo service nginx start    nginx启动命令
+
+sudo service nginx reload   nginx重启命令
+
+systemctl status nginx.service    编辑nginx配置文件时,如果报错,可以查看具体错误信息.
+
+
+mysql
+
+sudo /etc/init.d/mysql restart   mysql数据库重启命令 
+
+
+
+python 部署 uwsgi 
+uwsgi在哪个目录启动，就会在哪个目录生成uwsgi.pid和uswgi.log文件
+
+uwsgi --ini uwsgi.ini &  启动命令
+
+uwsgi --stop uwsgi.pid  停止命令
+
+uwsgi --reload uwsgi.pid 重新启动命令
+
+sudo pkill -f uwsgi -9   强制停止  (停止所以uwsgi进程,包括其他项目的进程)
+
+ps -ef | grep uwsgi   查看uswgi服务是不是在服务器中启动了
+
+

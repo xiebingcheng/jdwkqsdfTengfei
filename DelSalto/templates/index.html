@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: microsoft yahei;
+        }
+
+        .index_url {
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -100px;
+            margin-left: -150px;
+        }
+
+        .index_url a {
+            font-size: 40px;
+
+        }
+
+        .index_title {
+            width: 600px;
+            height: 100px;
+            margin: 100px auto;
+            text-align: center;
+
+        }
+
+        .index_title {
+            display: block;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 80px;
+            letter-spacing: -2px;
+            text-align: center;
+            color: #e01119;
+            text-shadow: 6px 6px 12px #3f3332;
+        }
+    </style>
+</head>
+<body>
+
+{% for index_all_datas in index_all_data %}
+    <div class="index_title">
+
+        <h2>
+            {{ index_all_datas.title }}
+        </h2>
+
+    </div>
+    <div class="index_url">
+        <a href="{{ index_all_datas.main_url }}">请点击继续访问</a>
+    </div>
+{% endfor %}
+
+</body>
+</html>

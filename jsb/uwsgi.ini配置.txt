@@ -1,0 +1,39 @@
+﻿# mysite_uwsgi.ini file
+[uwsgi]
+
+# Django-related settings
+# the base directory (full path)
+# 项目根目录
+chdir           = /home/lucky/pythonVirtua/liuhecaibaoliao
+# Django's wsgi file
+# 项目的wsgi文件的位置
+module          = django2.wsgi
+# the virtualenv (full path)
+
+# process-related settings
+# master
+master          = true
+# maximum number of worker processes
+processes       = 5
+# the socket (use the full path to be safe
+socket          = 127.0.0.1:8000
+# ... with appropriate permissions - may be needed
+# chmod-socket    = 664
+# clear environment on exit
+vacuum          = true
+# 项目virtualenv 文件夹的位置 (很重要)
+virtualenv = /home/lucky/.virtualenvs/liuhecaibaoliao
+pidfile=%(chdir)/uwsgi.pid
+daemonize=%(chdir)/uwsgi.log
+
+
+天天彩票
+心水坛
+https://www.13854.com/ 开奖结果 加上
+https://www.kj139.com/ 开奖结果 加上
+
+www.kj431.com       主域名
+www.kj39888.com     备用域名
+
+utf8_general_ci 默认排序
+

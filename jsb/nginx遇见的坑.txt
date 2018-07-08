@@ -1,0 +1,8 @@
+1.  windwos 下 nginx配置localhost 的配置 如果路径要区分大小写 需要在路径前面加一个~ 表示区分大小写的正则匹配
+
+如: location ~ Pattern   ~表示区分大小写的正则匹配
+
+参考 https://www.cnblogs.com/coder-yoyo/p/6346595.html 
+
+
+

@@ -1,0 +1,8 @@
+start nginx  启动nginx  windows版本
+
+nginx -s reload   重启nginx
+
+nginx -s stop  stop表示立即停止nginx,不保存相关信息
+
+nginx -s quit  quit表示正常退出nginx,并保存相关信息
+

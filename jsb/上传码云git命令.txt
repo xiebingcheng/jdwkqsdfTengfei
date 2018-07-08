@@ -1,0 +1,19 @@
+
+Git 全局设置:
+
+git config --global user.name "腾飞"
+git config --global user.email "2877914599@qq.com"
+
+
+
+
+创建 git 仓库:
+
+git remote add origin git@gitee.com:xgtf/每个仓库的SSH都不一样.git   //每个仓库的SSH都不一样
+
+git init
+git add .
+git commit -m "20180621"
+
+git push -u origin master
+

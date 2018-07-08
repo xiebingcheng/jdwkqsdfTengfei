@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<!-- saved from url=(0049)http://6899w.com/list.aspx?id=229&sid=&yli=1&pw=0 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Keywords" content="天天彩票心水坛  ">
+    <meta name="Description" content="天天彩票心水坛  ">
+    <link rel="stylesheet" href="/static/css/color.css" type="text/css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <title>{{ post_detail.name }}</title>
+</head>
+<body>
+<div class="b">
+    <a href="javascript:;">
+        {#    <font color="#ff0000">(彩世界)特码48.8倍/时彩9.95倍/赛车9.95倍/信誉网投</font>#}
+        {#    </a>#}
+        {#    <br>#}
+        {#    <a href="http://aa60666.com/?pid=5055">#}
+        {#        <font color="#0000ff">澳客国际/港彩48倍/+2%反水,时彩/pk赛车/提款秒到</font>#}
+        {#    </a><br>#}
+        {#    <a href="https://m.cp89003.com/index?p=968"><font color="#800080">彩票89港彩48.8倍,时时彩9.8倍,注册送28彩金</font></a>#}
+        {#    <br>#}
+        {#    <a href="https://wap.bs1112.com/?pid=10010">推荐(博胜网)买特48倍/日月返利/充值赠2%/注册送12元</a>#}
+        {#    <br>#}
+        {#    <a href="https://yy2999.com/?pid=28">#}
+        {#        <font color="#008000">诚信买码48.5倍,时彩赛车9.92倍注册即送2000试玩</font>#}
+        {#    </a>#}
+        {#    <br>#}
+        {#    <a href="http://pp7894.com/?pid=15">#}
+        {#        <font color="#800080">英博买码48倍/时时+赛车/开户送8元/提款秒到</font>#}
+        {#    </a>#}
+        {#    <br>#}
+        {#    <a href="http://tian9898.com/?pid=21378">#}
+        {#        <font color="#1e90ff">7天国际买码48.5倍+返水+月月返利+充值送2.0%</font>#}
+        {#    </a>#}
+        {#    <br>#}
+        {#    <img src="./062期_玄机６尾-[幕料]_files/1213.gif" alt=" ">#}
+        {#    <a href="http://www.33203.cc/gg/8078u.htm">金财神【平码复式三中三】必中特</a>#}
+        {#    <br>#}
+        {#    <img src="./062期_玄机６尾-[幕料]_files/1213.gif" alt=" ">#}
+        {#    <a href="http://www.15119.cc/gg/2881w.htm">免费公开★一肖一码实力验证【绝不收费】√</a>#}
+        <br>
+        请关注www.kj431.com (备用域名:www.kj39888.com)<br>
+
+    </a>
+    {#新加微信二维码位置#}
+    {% for WeChat_QR_codes in WeChat_QR_code %}
+        <div>
+            <p class="wechat_explain">{{ WeChat_QR_codes.name }}</p>
+            <img src="{{ WeChat_QR_codes.wechat_img_qr_code.url }}" alt="{{ WeChat_QR_codes.name }}"/>
+        </div>
+    {% endfor %}
+    ------------
+    <p class="detail_p">
+        {{ post_detail.content }}
+    </p>
+
+    ------------
+    <br>
+
+    {% if has_next %}
+        下篇:
+        <a href="{% url 'detail' liuhecai_next.id %}">{{ liuhecai_next.name }}</a>
+    {% endif %}
+    <br>
+
+    {% if has_prev %}
+        上篇:
+        <a href="{% url 'detail' liuhecai_prev.id %}">{{ liuhecai_prev.name }}</a>
+        <br>
+    {% endif %}
+    <br>
+
+
+
+
+
+
+    <p>为了能够更快的浏览速度，我们已将以往记录删除！</p>
+
+    <a href="{% url 'index' %}">返回本站首页</a>
+    <br>
+    {#        {{ time|date:"Y-m-d H:i:s" }}#}
+    {{ time }}
+    <br>
+    </a>
+</div>
+
+<script>
+    $(function () {
+        {#    p标签换行#}
+        $("p.detail_p").each(function () {
+            var temp = $(this).text().replace(/\n|\r\n/g, '<br/>');
+            $(this).html(temp);
+        });
+    });
+</script>
+</body>
+</html>

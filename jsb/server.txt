@@ -1,0 +1,33 @@
+150.129.42.29  -  31  3个ip
+
+账户：lucky
+初始密码：ASD123asd???
+
+准备更改： TengfeiServidor98@LOTERIE
+
+mysql : root  TengfeiServidorMysql
+
+服务器购买日期：2018年5月8日
+
+https://item.taobao.com/item.htm?spm=a230r.1.14.16.401262b2BY0dM9&id=566793354937&ns=1&abbucket=18#detail   公司服务器淘宝网址
+
+
+sudo vi /etc/nginx/nginx.conf #主配置的文件
+
+sudo vim /etc/nginx/sites-enabled/default  #这个文件主要是配置server的
+
+
+/home/lucky/98jihua   //设置的项目目录
+
+sudo /etc/init.d/mysql restart   mysql重启命令 linux
+
+
+ubuntu 安装程序的目录 /usr/local/lib/
+ubuntu 安装程序的系统目录 
+
+
+
+
+
+
+

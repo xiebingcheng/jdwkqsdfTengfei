@@ -1,0 +1,11 @@
+server {
+    listen       80;
+    server_name  www.11aa22aa.com;
+
+    location / {
+            rewrite ^(.*)$ https://cp51111.com/Register permanent;  
+            
+        }
+        /home/lucky/redirection/98caipiao
+        .conf
+}

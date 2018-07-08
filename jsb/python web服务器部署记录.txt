@@ -1,0 +1,153 @@
+在安装最新版的mysql数据库的时候会出现navicat连接最新版本数据库连接不上的问题,原因是最新版本数据库加密方式和以前的不一样了,所以要配置一下,才能连接成功.
+方法如下:
+
+win下启动mysql   本机
+
+MySQL  -hlocalhost -uroot -p
+
+
+修改mysql密码 然后可以给navicat访问的 转换密码加密格式.
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword' PASSWORD EXPIRE NEVER;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'newpassword';   
+FLUSH PRIVILEGES;  
+
+
+
+
+https://blog.csdn.net/aifishing/article/details/80208782   navicat连接错误时的解决办法 特别是新的mysql8.0版本
+
+-----------------------------------------------------
+
+python django服务器部署
+
+1. 在 服务器中安装 mysql数据库 (ubuntu)
+   不同的服务器系统安装方式不同
+
+sudo /etc/init.d/mysql restart  mysql数据库重启命令 
+
+2.安装python 安装的时候发现一个问题 就是一般liunx下,python2是默认安装的,然后如果安装不好会出现各种各样的问题,比如我源码安装的python3,然后出现了pip不能使用的情况.. (真的没时间去折腾了.项目赶..) 然后我找的了一个安装python的方法 就是 -- pyenv 在liunx下非常好用
+具体安装教程看:https://www.v2ex.com/t/420216
+
+3.安装python的虚拟环境 virtualenv 
+(1) find / -name virtualenvwrapper.sh  查找此文件的位置
+(2) vim ~/.bashrc   
+
+配置环境变量在系统中
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/python3/bin/virtualenvwrapper.sh
+
+(3)执行.bashrc使文件生效
+source ~/.bashrc
+
+
+4.通过pip的命令记录虚拟环境的python依赖包
+pip freeze > requirements.txt
+
+5.导入在liunx服务器的项目位置中,(记得执行workon命令切换到虚拟环境中)
+
+导入项目依赖包
+pip install -r requirements.txt
+
+6.安装uwsgi (虚拟环境中安装)
+pip install uwsgi
+
+7.在项目中创建一个conf文件夹用于存放 uwsgi的配置文件
+
+vim uwsgi.ini
+
+配置文件如下
+
+# mysite_uwsgi.ini file
+[uwsgi]
+
+# Django-related settings
+# the base directory (full path)
+# 项目根目录
+chdir           = /home/lucky/pythonVirtua/liuhecaibaoliao
+# Django's wsgi file
+# 项目的wsgi文件的位置
+module          = django2.wsgi
+# the virtualenv (full path)
+
+# process-related settings
+# master
+master          = true
+# maximum number of worker processes
+processes       = 5
+# the socket (use the full path to be safe
+socket          = 127.0.0.1:8000
+# ... with appropriate permissions - may be needed
+# chmod-socket    = 664
+# clear environment on exit
+vacuum          = true
+# 项目virtualenv 文件夹的位置 (很重要)
+virtualenv = /home/lucky/.virtualenvs/liuhecaibaoliao
+pidfile=%(chdir)/uwsgi.pid
+daemonize =%(chdir)/conf/uwsgi.log
+
+django 项目的话,需要进行更改生产环境 setting.py
+
+DEBUG = False
+ALLOWED_HOSTS = ['*']
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+urls.py 更改静态资源url 经过nginx处理 不需要django或者uwsgi处理了
+
+from django.views.static import serve
+from blog.settings import STATIC_ROOT
+
+#添加静态文件的访问处理函数
+url(r'^static/(?P<path>.*)/$', serve, {'document_root': STATIC_ROOT}),
+
+运行命令， 搜集所有静态文件到static下，包括admin中的
+python manage.py collectstatic
+
+nginx配置 
+
+server {
+	listen      80;
+	server_name 20.20.20.20 www.geerniya.cn ; # substitute your machine's IP address or FQDN
+	charset     utf-8;
+
+	location / {
+    		uwsgi_pass  django;
+    		include     uwsgi_params; # the uwsgi_params file you installed
+	}
+
+	# Django 静态配置
+	location /media  {
+    		alias /root/blog/media/;  # 指向django的media目录
+	}
+
+	location /static {
+    		alias /root/blog/static/; # 指向django的static目录
+	}
+
+
+}
+
+配置完了 记得把django项目的数据库改成 线上服务器的数据库!!! (上次我就是忘记了这个数据库的事,导致项目一直跑不起来,当时新手.. 搞得我一直认为是uwsgi没弄好,没启动..)
+
+uwsgi 命令
+
+uwsgi在哪个目录启动，就会在哪个目录生成uwsgi.pid和uswgi.log文件
+
+uwsgi --ini uwsgi.ini &   启动命令 (加上& 长久启动)
+
+uwsgi --stop uwsgi.pid  停止命令
+
+uwsgi --reload uwsgi.pid 重新启动命令
+
+sudo pkill -f uwsgi -9   强制停止
+
+ps -ef | grep uwsgi   查看uswgi服务是不是在服务器中启动了
+
+
+
+
+
+
+
+
