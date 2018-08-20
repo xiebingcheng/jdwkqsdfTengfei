@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=deviece-width,initial-scale=1">
+    <title>投票</title>
+    <link rel="stylesheet" href="../css/public/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/page/vote.css" type="text/css">
+</head>
+<body>
+<div class="wraper">
+    <!--顶部栏-->
+    <header>
+        <div class="luhecai-top-column flex">
+            <a href="javascript:;">
+                <span class="liuhecai-list-top-column-left" onclick="window.history.back()"> < </span>
+            </a>
+
+            <span class="liuhecai-top-column-middle">投票</span>
+        </div>
+    </header>
+    <div style="height: 54px"></div>
+
+    <!--主体部分-->
+
+
+    <div class="vote-tbody">
+        <section class="vote-bose-vote" onclick="window.location='bose-vote.html'">
+            <div>
+                <span class="bstp"></span>
+                <p>波色投票</p>
+            </div>
+            <b> > </b>
+        </section>
+        <section class="vote-danshuang-vote" onclick="window.location='danshuang-vote.html'">
+            <div>
+                <span class="dstp"></span>
+                <p>单双投票</p>
+            </div>
+            <b> > </b>
+        </section>
+        <section class="vote-zodiac-vote" onclick="window.location='zodiac-vote.html'">
+            <div>
+                <span class="sxtp"></span>
+                <p>生肖投票</p>
+            </div>
+            <b> > </b>
+        </section>
+    </div>
+</div>
+</body>
+</html>

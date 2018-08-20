@@ -1,0 +1,58 @@
+
+/*
+    六合统计 css
+ */
+
+.liuhe-statistice-upper-part-box{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding:8px 0;
+}
+
+/*红波*/
+.liuhe-statistice-upper-part-box li.liuhe-statistice-upper-part-red{
+    background: url("../../img/numberball/redball.png") no-repeat center;
+    background-size: cover;
+}
+/*蓝波*/
+.liuhe-statistice-upper-part-box li.liuhe-statistice-upper-part-blue{
+    background: url("../../img/numberball/blueball.png") no-repeat center;
+    background-size: cover;
+}
+/*绿波*/
+.liuhe-statistice-upper-part-box li.liuhe-statistice-upper-part-green{
+    background: url("../../img/numberball/greenball.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-statistice-upper-part-box div ul{
+    display: flex;
+}
+.liuhe-statistice-upper-part-box div ul li{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    margin: 0 5px;
+}
+.liuhe-statistice-upper-part-box .liuhe-statistice-upper-part-line p{
+    margin: 8px 5px;
+}
+
+/*下部分*/
+.liuhe-statistice-down-part-box{
+    background-color: #fff;
+}
+.liuhe-statistice-down-part-box div.liuhe-statistice-down-part-inner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+.liuhe-statistice-down-part-box div.liuhe-statistice-down-part-inner div{
+    width: 50%;
+}
+.liuhe-statistice-down-part-box div.liuhe-statistice-down-part-inner div:first-child{
+    text-align: right;
+    padding-right: 10px;
+}

@@ -1,0 +1,99 @@
+
+/*
+    论坛 css
+ */
+
+.forum-write-logo{
+    display: block;
+    background: url("../../img/forum/forum-write.png") no-repeat center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.forum-tbody{
+    width: 100%;
+}
+.forum-tbody-nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+.forum-tbody-nav li{
+    font-size: 16px;
+    width: 45px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+
+}
+
+.forum-list-box{
+    position: relative;
+    padding: 16px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+.forum-tbody-nav-line{
+    border-bottom: 2px solid #fc8802;
+}
+.forum-list-small-box{
+    display: flex;
+    align-items: center;
+}
+.forum-list-small-box img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.forum-list-small-box div span{
+
+}
+.forum-list-small-box div p{
+    margin: 0;
+    color: #9c9ba0;
+}
+.forum-dianzan{
+    display: flex;
+    position: absolute;
+    top: 16px;
+    right: 56px;
+    text-align: center;
+}
+.forum-dianzan-logo{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url("../../img/forum/dianzan.png") no-repeat center;
+    background-size: cover;
+
+}
+.forum-comment{
+    display: flex;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    text-align: center;
+}
+.forum-comment-logo{
+    display: block;
+    width: 16px;
+    height: 15px;
+    background: url("../../img/forum/comment.png") no-repeat center;
+    background-size: cover;
+}
+.forum-list-bottom-box h4{
+    margin: 8px 0;
+    color: red;
+    font-size: 14px;
+}
+.forum-list-bottom-box p{
+    width: 100%;
+    text-indent: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

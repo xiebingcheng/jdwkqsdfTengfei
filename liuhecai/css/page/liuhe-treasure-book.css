@@ -1,0 +1,100 @@
+
+/**
+    六合宝典 css
+ */
+
+body{
+    background-color: #efeff4;
+}
+.liuhe-treasure-book-list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.liuhe-treasure-book-list div{
+    width: 33%;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+/*除去3 6 9 12 15 的右边框*/
+.liuhe-treasure-book-list div:nth-last-child(3n+1){
+    border-right:none;
+}
+/*除去 最后三个的下边框*/
+.liuhe-treasure-book-list div:nth-last-child(-n+3){
+    border-bottom:none;
+}
+.liuhe-treasure-book-list>div>span{
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+.liuhe-treasure-book-list>div>p{
+    font-size: 16px;
+    margin: 8px 0;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-lhtj span{
+    background: url("../../img/liuhe-treasure-book/lhtj.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-sxck span{
+    background: url("../../img/liuhe-treasure-book/sxck.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-tmls span{
+    background: url("../../img/liuhe-treasure-book/tmls.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-zmls span{
+    background: url("../../img/liuhe-treasure-book/zmls.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-wsdx span{
+    background: url("../../img/liuhe-treasure-book/wsdx.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-sxtm span{
+    background: url("../../img/liuhe-treasure-book/sxtm.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-bstm span{
+    background: url("../../img/liuhe-treasure-book/bstm.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-sxzm span{
+    background: url("../../img/liuhe-treasure-book/sxzm.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-bszm span{
+    background: url("../../img/liuhe-treasure-book/bszm.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-tmlm span{
+    background: url("../../img/liuhe-treasure-book/tmlm.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-tmws span{
+    background: url("../../img/liuhe-treasure-book/tmws.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-zmws span{
+    background: url("../../img/liuhe-treasure-book/zmws.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-zmzf span{
+    background: url("../../img/liuhe-treasure-book/zmzf.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-tmjl span{
+    background: url("../../img/liuhe-treasure-book/tmjl.png") no-repeat center;
+    background-size: cover;
+}
+.liuhe-treasure-book-list .liuhe-treasure-book-list-jqys span{
+    background: url("../../img/liuhe-treasure-book/jqys.png") no-repeat center;
+    background-size: cover;
+}

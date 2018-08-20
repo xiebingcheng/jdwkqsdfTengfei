@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=deviece-width,initial-scale=1">
+    <title>发表新帖</title>
+    <link rel="stylesheet" href="../css/public/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/page/publish-new-card.css" type="text/css">
+</head>
+<body>
+
+<div class="wraper">
+    <!--顶部栏-->
+    <header>
+        <div class="luhecai-top-column flex">
+            <a href="javascript:;">
+                <span class="liuhecai-list-top-column-left" onclick="window.history.back()"> < </span>
+            </a>
+
+            <span class="liuhecai-top-column-middle">发表新帖</span>
+        </div>
+    </header>
+    <div style="height: 54px"></div>
+
+    <!--主体部分-->
+    <div class="publish-new-card-box">
+        <section class="publish-new-card-title">
+            <span>标题:</span>
+            <input type="text" placeholder="(必填,最多30字)" class="">
+        </section>
+        <section class="publish-new-card-tbody">
+            <!--<textarea  onblur="on_blur(this,'提示内容：abc')" onfocus="on_focus(this,'提示内容：abc')">提示内容：ab</textarea>-->
+            <textarea  cols="1" rows="1" onfocus="on_focus(this,'我想说:')" onblur="on_blur(this,'我想说:')">我想说:</textarea>
+        </section>
+        <div style="height: 50px"></div>
+        <div class="publish-new-card-bottom">发布</div>
+    </div>
+</div>
+<script>
+    var c = '我想说：';
+    function on_focus(obj){
+        obj.value = obj.value==(!!arguments[1]?arguments[1]:c)?'':obj.value;
+    }
+    function on_blur(obj){
+        obj.value = obj.value==''?(!!arguments[1]?arguments[1]:c):obj.value;
+    }
+</script>
+
+</body>
+</html>

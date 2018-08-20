@@ -1,0 +1,71 @@
+
+/*
+    单双投票 css
+ */
+
+.danshuang-vote-up-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    margin: 20px auto;
+}
+.danshuang-vote-up-box div{
+    width: 35%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fc8802;
+    border-radius: 0 8px 8px 0;
+    text-align: center;
+    color: #fff;
+}
+.danshuang-vote-up-box p{
+    color: #aeadb3;
+    margin-right: 10px;
+}
+
+/*中间部分*/
+.danshuang-vote-center-box{
+    width: 100%;
+    height: auto;
+}
+.danshuang-vote-center-box ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.danshuang-vote-center-box ul li{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.danshuang-vote-center-box ul li div{
+    width: 100px;
+    height: 100px;
+}
+.danshuang-vote-center-box ul li div.dan{
+    background: url("../../img/danshuang-vote/dan@3x.png") no-repeat center;
+    background-size: cover;
+}
+.danshuang-vote-center-box ul li div.shuang{
+    background: url("../../img/danshuang-vote/shuang@3x.png") no-repeat center;
+    background-size: cover;
+}
+.danshuang-vote-center-box ul li p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.danshuang-vote-center-box ul li span{
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #fc8802;
+    color: #fc8802;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+}

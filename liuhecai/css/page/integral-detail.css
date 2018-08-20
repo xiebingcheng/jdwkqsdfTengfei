@@ -1,0 +1,109 @@
+
+/*
+    积分明细 css
+ */
+
+/*css3打钩图标icon*/
+
+
+.demoSpan1{border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px; background:#C91B1B;}
+
+.demoSpan1:after, .demoSpan1:before{
+    content: '';
+    height: 12px;
+    width: 2px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);}
+
+.demoSpan1:before{
+    height: 8px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    top: 8px;
+    left: 6px;
+}
+
+.integral-detail-logo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+.integral-detail-logo img{
+    width: 60px;
+    height: 60px;
+    padding-left: 50px;
+}
+.integral-detail-logo div{
+    width: 60%;
+}
+.integral-detail-logo div p{
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.integral-detail-logo div p b{
+    color: #fda642;
+}
+.integral-detail-logo div span{
+    color: #ceced4;
+
+}
+
+/*新用户注册等*/
+.integral-detail-module-up{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #fff;
+}
+.integral-detail-module-up div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    border-bottom: 1px solid #efeff4;
+}
+.integral-detail-module-up div:last-child{
+    border: none;
+}
+.integral-detail-module-up div span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+    margin-right: 20px;
+}
+.integral-detail-module-up div p b{
+    color: #d7d7db;
+}
+
+/*每日任务*/
+.integral-detail-meiri{
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    background-color: #efeff4;
+    padding: 0 0 0 18px;
+}

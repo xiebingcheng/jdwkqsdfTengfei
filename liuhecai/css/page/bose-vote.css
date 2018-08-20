@@ -1,0 +1,95 @@
+
+/*
+    波色投票 css
+ */
+
+.bose-vote-up-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    margin: 20px auto;
+}
+.bose-vote-up-box div{
+    width: 35%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fc8802;
+    border-radius: 0 8px 8px 0;
+    text-align: center;
+    color: #fff;
+}
+.bose-vote-up-box p{
+    color: #aeadb3;
+    margin-right: 10px;
+}
+.bose-vote-center-box{
+    width: 100%;
+    height: auto;
+}
+.bose-vote-center-box ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bose-vote-center-box ul li div{
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+}
+.bose-vote-center-box ul li p{
+    text-align: center;
+    font-size: 14px;
+}
+.bose-vote-center-box ul li span{
+    display: block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    color: #fa941e;
+    border: 1px solid #fc8802;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.bose-vote-center-box-bg-red{
+    background-color: #ff004a;
+}
+.bose-vote-center-box-bg-blue{
+    background-color: #4a90e2;
+}
+.bose-vote-center-box-bg-green{
+    background-color: #1eb771;
+}
+.bose-vote-bottom-box{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.bose-vote-bottom-box ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bose-vote-bottom-box ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+.bose-vote-bottom-box ul li span{
+    display: block;
+    width: 90px;
+    text-align: center;
+    height: 180px;
+    background-color: #c9594f;
+}

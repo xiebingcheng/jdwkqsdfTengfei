@@ -1,0 +1,37 @@
+
+/*
+    推荐页 css
+ */
+
+
+/*下面的list部分 css*/
+.recommend-tbody-box .recommend-tbody-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 3px 0;
+}
+.recommend-tbody-box .recommend-tbody-list div{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin: 5px 0;
+    margin-left: 10px;
+
+}
+.recommend-tbody-box .recommend-tbody-list div p{
+    margin-left: 10px;
+}
+.recommend-tbody-box .recommend-tbody-list span{
+    margin-right: 10px;
+}
+
+.recommend-tbody-box .recommend-tbody-list div i{
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    background: url("../../img/indexLogo/aomenweinisi.png") no-repeat center;
+    background-size: cover;
+}

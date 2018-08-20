@@ -1,0 +1,58 @@
+
+/*
+    投票 css
+ */
+
+.vote-tbody{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.vote-tbody section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #efeff4;
+    background-color: #fff;
+}
+.vote-tbody  section:last-child{
+    border: none;
+}
+/*控制圆形图片 等有图片了就要换css样式了*/
+.vote-tbody section div span{
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+.bstp{
+    background: url("../../img/vote/bstp@2x.png") no-repeat center;
+    background-size: cover;
+}
+.dstp{
+    background: url("../../img/vote/dstp@2x.png") no-repeat center;
+    background-size: cover;
+}
+.sxtp{
+    background: url("../../img/vote/sxtp@2x.png") no-repeat center;
+    background-size: cover;
+}
+.vote-tbody section div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    margin-left: 20px;
+}
+.vote-tbody section div p{
+    margin: 16px 0;
+}
+.vote-tbody section b{
+    color: #DCDCDC;
+    margin-right: 15px;
+    -webkit-transform: scale(1,2);
+    -moz-transform: scale(1,2);
+    -ms-transform: scale(1,2);
+    -o-transform: scale(1,2);
+    transform: scale(1,2);
+}

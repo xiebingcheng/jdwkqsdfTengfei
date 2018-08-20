@@ -1,0 +1,44 @@
+
+/*
+    图库 css
+ */
+
+.img-depot-upper-part-box{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    margin: 10px 0;
+
+}
+.img-depot-upper-part-box div.img-depot-upper-part-box-inside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+
+}
+.img-depot-upper-part-box-inside img{
+    width: 30px;
+    height: 20px;
+    margin-left: 16px;
+}
+.img-depot-upper-part-box-inside div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+}
+.img-depot-upper-part-box-inside div i{
+    margin-right: 10px;
+    transform: scale(1,2.8);
+    color: #C5C7C9;
+}
+
+.img-depot-upper-part-box-inside-down img{
+    width: 30px;
+    height: 30px;
+}
+.img-depot-upper-part-box-inside .img-depot-line{
+    border-bottom: 1px solid #dcdee0;
+}

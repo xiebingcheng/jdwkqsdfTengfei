@@ -1,0 +1,79 @@
+
+/*
+    开奖结果 css
+ */
+
+b{
+    font-weight: bolder;
+}
+.iletou-module{
+    background-color: #fff;
+    padding: 10px 0;
+}
+.iletou-bg-img-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iletou-bg-img-title>div{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 320px){
+    .iletou-bg-img-title>div{
+        width: 46%;
+    }
+}
+.iletou-bg-img-title-text{
+    font-size: 16px;
+    font-weight: 600;
+}
+.iletou-bg-img-title>p{
+    margin-right: 10px;
+    color: #9d9ca1;
+}
+.next-run-lottery-time{
+    padding: 5px 0;
+}
+.next-run-lottery-time p:first-child{
+    font-size: 16px;
+}
+.next-run-lottery-time p:last-child{
+    font-size: 18px;
+    font-weight: 600;
+}
+.iletou-module-second-title{
+    display: flex;
+    align-items: center;
+}
+.iletou-module-second-title .line{
+    margin: 0 10px;
+}
+.iletou-module-second-title h3{
+    font-size: 16px;
+}
+.iletou-module-second p, .iletou-module-second span{
+    color: #9c9ba0;
+}
+.iletou-module-second span b{
+    color: #222222;
+}
+.iletou-module-second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 66%;
+}
+.iletou-module-second-box section{
+    background-color: #fff;
+    border-bottom: 1px solid #efeff4;
+}
+.iletou-module-second span{
+    padding-left: 10px;
+}
+.iletou-module-list{
+    padding: 10px 0 0 0;
+}

@@ -9,7 +9,9 @@ git config --global user.email "2877914599@qq.com"
 
 创建 git 仓库:
 
-git remote add origin git@gitee.com:xgtf/每个仓库的SSH都不一样.git   //每个仓库的SSH都不一样
+记住 用的是 https协议上传  最好不要用SSH协议
+
+git remote add origin git@gitee.com:xgtf/每个仓库的地址都不一样.git   //每个仓库的地址都不一样
 
 git init
 git add .

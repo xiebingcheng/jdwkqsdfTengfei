@@ -1,0 +1,66 @@
+
+/*
+    活动专区页
+ */
+
+h3,p{
+    margin: 0;
+}
+/*活动图片 css*/
+.activity-img{
+    width: 100%;
+    height: auto;
+}
+.activity-img img{
+    width: 100%;
+}
+
+/*活动列表*/
+.activity-index-list{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+.activity-index-list-box .activity-index-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #efeff4;
+}
+.activity-index-list img{
+    width: 38%;
+    height: 100%;
+    margin-right: 5px;
+}
+.activity-index-list div{
+    width: 90%;
+    height: 100%;
+}
+.activity-index-list div div{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.activity-index-list div p{
+    width: 20rem;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 5px 0;
+    color: #b4b3b8;
+}
+.activity-index-list div div span{
+    width: 48px;
+    height: 18px;
+    font-size: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+.activity-index-list div div h3{
+    margin-top: 3px;
+    color: #4d4d4d;
+}

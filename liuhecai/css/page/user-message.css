@@ -1,0 +1,24 @@
+
+/*
+    个人中心 css
+ */
+
+.user-club-box{
+    margin-top: 5px;
+}
+.user-club-box-list{
+    background-color: #fff;
+    margin-bottom: 2px;
+}
+.user-club-box-list div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-club-box-list div p{
+    margin-left: 18px;
+}
+.user-club-box-list div span{
+    margin-right: 10px;
+    color: #a3a3a3;
+}

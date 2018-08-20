@@ -1,0 +1,125 @@
+
+/*
+    登录页 css
+ */
+
+body{
+    background-color: #ffffff;
+}
+.container{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+.login-input{
+    width: 100%;
+    height: 230px;
+}
+.login-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-input div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.login-input input{
+    width: 50%;
+    height: 30px;
+    padding-left: 40px;
+    border: none;
+    border-bottom: 1px solid #e3e3e6;
+}
+.login-input input::-webkit-input-placeholder{
+    color: #9b9b9b;
+}
+.login-input .login-user-input{
+    background: url("../../img/login/dl_zh.png") 1px  no-repeat ;
+    background-size: 20px 20px;
+    margin-bottom: 30px;
+}
+.login-input .login-psw-input{
+    background: url("../../img/login/dl_mm.png") 1px no-repeat ;
+    background-size: 20px 20px;
+}
+.login-input div div{
+    padding-top: 12px;
+    text-indent: 14em;
+    color: #b5b5b5;
+}
+
+/*登录 按钮 css*/
+.login-btn{
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fc8802;
+    margin: auto;
+}
+.login-zhuce-text{
+    text-align: center;
+    color: #a6a6a6;
+    margin-top: 20px;
+}
+.login-zhuce-text b{
+    color: #fc8e10;
+}
+.login-qt{
+    width: 100%;
+    height: 30px;
+}
+.login-qt ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+}
+.login-qt ul li{
+    color: #c5c5c5;
+}
+.login-qt ul li:first-child{
+    width: 30%;
+    height: 2px;
+    background-color: #e3e3e6;
+}
+.login-qt ul li:last-child{
+    width: 30%;
+    height: 2px;
+    background-color: #e3e3e6;
+}
+
+/*最底部 logo css*/
+.login-bottom-logo{
+    margin: 20px auto;
+    width: 60%;
+}
+.login-bottom-logo ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-bottom-logo ul li{
+    width: 30px;
+    height: 33px;
+}
+.login-bottom-logo-zfb{
+    background: url("../../img/login/dl zfb@3x.png") no-repeat  center;
+    background-size: cover;
+}
+.login-bottom-logo-qq{
+    background: url("../../img/login/dl qq@3x.png") no-repeat  center;
+    background-size: cover;
+    height: 50px;
+}
+.login-bottom-logo-wx{
+    background: url("../../img/login/dl wx@3x.png") no-repeat  center;
+    background-size: cover;
+}

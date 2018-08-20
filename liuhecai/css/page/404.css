@@ -1,0 +1,38 @@
+
+/*
+    404 css
+ */
+
+.not-found-404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+
+}
+.not-found-404 div{
+    width: 100%;
+    height: auto;
+}
+.not-found-404 div img{
+    width: 150px;
+    height: 150px;
+}
+.not-found-404 div h2{
+    font-weight: normal;
+}
+.not-found-404 div p{
+    color: #a7a7a8;
+    margin-bottom: 66px;
+}
+.not-found-404 div div{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto;
+}

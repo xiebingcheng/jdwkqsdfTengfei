@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=deviece-width,initial-scale=1">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../css/public/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/page/mine.css" type="text/css">
+</head>
+<body>
+    <div class="wraper">
+        <!--顶部导航部分-->
+        <header>
+            <div class="luhecai-top-column">
+
+                <span class="liuhecai-lottery-top-column-odd">个人中心</span>
+            </div>
+        </header>
+        <div style="height: 54px"></div>
+        <!--mine 内容部分-->
+        <div class="container">
+            <!--mine page 用户背景图系列-->
+            <section class="mine-bg-img" onclick="window.location='login.html'">
+                <span class="mine-bg-logo" style="background: url('../img/mine/mine-logo@3x.png') no-repeat center;
+                background-size: 64px 64px;"></span>
+
+                <!--已登录时 显示-->
+                <!--<div class="mine-bg-img-mid">-->
+                    <!--<div class="mine-bg-img-mid-up">-->
+                        <!--<p class="mine-bg-text">cx99899</p>-->
+                        <!--<span class="mine-sex-logo"></span>-->
+                        <!--<i class="mine-redact-logo"></i>-->
+                    <!--</div>-->
+                    <!--<div class="mine-bg-img-mid-bottom">-->
+                        <!--<span>-->
+                            <!--&lt;!&ndash;<i class="mine-gold-logo"></i>&ndash;&gt;-->
+                            <!--积分64-->
+                        <!--</span>-->
+                        <!--<span>积分商城</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                    <!--当没登录时 显示-->
+                    <div class="mine-not-login" >
+                        <h2>登录 / 注册</h2>
+                    </div>
+                <b>
+                    >
+                </b>
+            </section>
+
+            <!--完善个人资料,得积分奖励-->
+            <section class="mine-stick-data">
+                <div>
+                    <span></span>
+                    <p>完善个人资料,得积分奖励!</p>
+                    <b>X</b>
+                </div>
+            </section>
+
+            <!--mine page 功能按钮-->
+            <section class="mine-function-button-out">
+                <ul class="mine-function-button">
+                    <li onclick="window.location='integral-detail.html'">
+                        <span class="mine-function-button-jf-icon"></span>
+                        <p>积分明细</p>
+                    </li>
+                    <li>
+                        <span class="mine-function-button-tj-icon"></span>
+                        <p>推荐活动</p>
+                    </li>
+                    <li onclick="window.location='recommend.html'">
+                        <span class="mine-function-button-tjhb-icon"></span>
+                        <p>合作伙伴</p>
+                    </li>
+                </ul>
+            </section>
+            <!--mine page 邀请好友 联系客服 关于我们-->
+            <section class="">
+                <div class="mine-function-menu">
+                    <ul class="">
+                        <li onclick="window.location='../404.html'">
+                            <div class="mine-invite-friends-icon-out">
+                                <i class="mine-invite-friends-icon"></i>
+                                <p>邀请好友</p>
+                            </div>
+                            <span> > </span>
+                        </li>
+                        <li onclick="window.location='https://chat6.livechatvalue.com/chat/chatClient/chatbox.jsp?companyID=17779&configID=48708&jid=&s=1'">
+                            <div class="mine-contact-kf-icon-out">
+                                <i class="mine-contact-kf-icon"></i>
+                                <p>联系客服</p>
+                            </div>
+                            <span> > </span>
+                        </li>
+                        <li onclick="window.location='about-us.html'">
+                            <div class="mine-about-us-icon-out" >
+                                <i class="mine-about-us-icon"></i>
+                                <p>关于我们</p>
+                            </div>
+                            <span> > </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--mine page 退出按钮-->
+            <section>
+                <div class="mine-exit-login">
+                    退出当前登录
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!--尾部固定nav-->
+    <div class="bottom-nav">
+        <ul>
+            <li><a href="javascript:;" class="bottom-nav-index" onclick="window.location='../index.html'">
+                <div class="bottom-nav-index-icon bottom-nav-public"></div>
+                <p>首页</p>
+            </a></li>
+            <li><a href="javascript:;" class="bottom-nav-draw" onclick="window.location='run-lottery.html'">
+                <div class="bottom-nav-draw-icon bottom-nav-public"></div>
+                <p>开奖</p>
+            </a></li>
+            <li><a href="javascript:;" class="bottom-nav-service" onclick="window.location='https://chat6.livechatvalue.com/chat/chatClient/chatbox.jsp?companyID=17779&configID=48708&jid=&s=1'">
+                <div class="bottom-nav-service-icon bottom-nav-public"></div>
+                <p>客服</p>
+            </a></li>
+            <li><a href="javascript:;" class="bottom-nav-mine" onclick="window.location='./page/mine.html'">
+                <div class="bottom-nav-mine-icon bottom-nav-public"></div>
+                <p>我的</p>
+            </a></li>
+        </ul>
+    </div>
+
+
+        <!--遮罩层-->
+    <div style="display: none">
+        <div class="bg-shade"></div>
+        <div class="show-share">
+            <ul>
+                <li class="show-share-logo-pyq"></li>
+                <li class="show-share-logo-weixin"></li>
+                <li class="show-share-logo-qq"></li>
+                <li class="show-share-logo-weibo"></li>
+                <li class="show-share-logo-qqkj"></li>
+            </ul>
+            <div class="show-share-x"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>

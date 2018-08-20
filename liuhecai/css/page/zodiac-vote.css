@@ -1,0 +1,252 @@
+
+/*!**/
+    /*生肖投票 css*/
+ /**!*/
+
+/*.zodiac-vote-up-box{*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*!*align-items: center;*!*/
+    /*margin: 20px auto;*/
+/*}*/
+/*.zodiac-vote-up-box div{*/
+    /*width: 45%;*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    /*background-color: #fc8802;*/
+    /*border-radius: 0 8px 8px 0;*/
+    /*text-align: center;*/
+    /*color: #fff;*/
+/*}*/
+/*.zodiac-vote-up-box p{*/
+    /*color: #aeadb3;*/
+    /*margin-right: 10px;*/
+/*}*/
+
+/*!*中间部分*!*/
+
+/*.zodiac-vote-center-box{*/
+    /*width: 100%;*/
+    /*height: auto;*/
+/*}*/
+/*.zodiac-vote-center-box ul{*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+/*}*/
+/*.zodiac-vote-center-box ul li{*/
+    /*width: 25%;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+    /*margin-top: 10px;*/
+/*}*/
+/*.zodiac-vote-center-box ul li div{*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+    /*border-radius: 50%;*/
+/*}*/
+/*.zodiac-vote-center-box ul li p{*/
+    /*margin: 8px 0;*/
+/*}*/
+/*.zodiac-vote-center-box ul li span{*/
+    /*display: block;*/
+    /*width: 50px;*/
+    /*height: 20px;*/
+    /*border-radius: 8px;*/
+    /*border: 1px solid #fc8802;*/
+    /*text-align: center;*/
+/*}*/
+
+/*!*控制这个类 cur 点击投票那里*!*/
+/*.zodiac-vote-center-box ul li span.cur{*/
+    /*color: #fff;*/
+    /*background-color: #fc8802;*/
+/*}*/
+
+/*!*12生肖 背景图引入*!*/
+/*.zodiac-vote-center-shu{*/
+    /*background: url("../../img/zodiac-vote/1@3x.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.zodiac-vote-center-niu{*/
+    /*background: url("../../img/zodiac-vote/2@3x.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.zodiac-vote-center-hu{*/
+    /*background: url("../../img/zodiac-vote/3@3x.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.zodiac-vote-center-tu{*/
+    /*background: url("../../img/zodiac-vote/4@3x.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.zodiac-vote-center-long{*/
+    /*background: url("../../img/zodiac-vote/5@3x.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.zodiac-vote-center-she{*/
+    /*background: url("../../img/zodiac-vote/6@3x.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.zodiac-vote-center-ma{*/
+    /*background: url("../../img/zodiac-vote/7@3x.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.zodiac-vote-center-yang{*/
+    /*background: url("../../img/zodiac-vote/8@3x.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.zodiac-vote-center-hou{*/
+    /*background: url("../../img/zodiac-vote/9@3x.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.zodiac-vote-center-ji{*/
+    /*background: url("../../img/zodiac-vote/10@3x.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.zodiac-vote-center-gou{*/
+    /*background: url("../../img/zodiac-vote/11@3x.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+/*.zodiac-vote-center-zhu{*/
+    /*background: url("../../img/zodiac-vote/12@3x.png") no-repeat center;*/
+    /*background-size: cover;*/
+/*}*/
+
+
+
+/*
+    生肖投票 css
+ */
+
+.zodiac-vote-up-box{
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    /*align-items: center;*/
+    margin: 20px auto;
+}
+.zodiac-vote-up-box div{
+    width: 45%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fc8802;
+    border-radius: 0 8px 8px 0;
+    text-align: center;
+    color: #fff;
+}
+.zodiac-vote-up-box p{
+    color: #aeadb3;
+    margin-right: 10px;
+}
+
+/*中间部分*/
+
+.zodiac-vote-center-box{
+    width: 100%;
+    height: auto;
+}
+.zodiac-vote-center-box ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.zodiac-vote-center-box ul li{
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.zodiac-vote-center-box ul li div{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.zodiac-vote-center-box ul li p{
+    margin: 8px 0;
+}
+.zodiac-vote-center-box ul li span{
+    display: block;
+    width: 50px;
+    height: 20px;
+    border-radius: 8px;
+    border: 1px solid #fc8802;
+    text-align: center;
+}
+
+/*控制这个类 cur 点击投票那里*/
+.zodiac-vote-center-box ul li span.cur{
+    color: #fff;
+    background-color: #fc8802;
+}
+
+/*12生肖 背景图引入*/
+.zodiac-vote-center-shu{
+    background: url("../../img/zodiac-vote/1@3x.png") no-repeat center;
+    background-size: cover;
+}
+.zodiac-vote-center-niu{
+    background: url("../../img/zodiac-vote/2@3x.png") no-repeat center;
+    background-size: cover;
+}
+.zodiac-vote-center-hu{
+    background: url("../../img/zodiac-vote/3@3x.png") no-repeat center;
+    background-size: cover;
+}
+.zodiac-vote-center-tu{
+    background: url("../../img/zodiac-vote/4@3x.png") no-repeat center;
+    background-size: cover;
+}
+.zodiac-vote-center-long{
+    background: url("../../img/zodiac-vote/5@3x.png") no-repeat center;
+    background-size: cover;
+}
+.zodiac-vote-center-she{
+    background: url("../../img/zodiac-vote/6@3x.png") no-repeat center;
+    background-size: cover;
+}
+.zodiac-vote-center-ma{
+    background: url("../../img/zodiac-vote/7@3x.png") no-repeat center;
+    background-size: cover;
+}
+.zodiac-vote-center-yang{
+    background: url("../../img/zodiac-vote/8@3x.png") no-repeat center;
+    background-size: cover;
+}
+.zodiac-vote-center-hou{
+    background: url("../../img/zodiac-vote/9@3x.png") no-repeat center;
+    background-size: cover;
+}
+.zodiac-vote-center-ji{
+    background: url("../../img/zodiac-vote/10@3x.png") no-repeat center;
+    background-size: cover;
+}
+.zodiac-vote-center-gou{
+    background: url("../../img/zodiac-vote/11@3x.png") no-repeat center;
+    background-size: cover;
+}
+.zodiac-vote-center-zhu{
+    background: url("../../img/zodiac-vote/12@3x.png") no-repeat center;
+    background-size: cover;
+}

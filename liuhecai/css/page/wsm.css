@@ -1,0 +1,52 @@
+
+/*
+    发表新帖 css
+ */
+
+body{
+    background-color: #fff;
+    position: relative;
+}
+
+.publish-new-card-box{
+    width: 100%;
+}
+.publish-new-card-title{
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+    border-bottom: 1px solid #c5c5c5;
+
+}
+.publish-new-card-title input{
+    border: none;
+    padding-left: 10px;
+    height: 80%;
+}
+.publish-new-card-title input::-webkit-input-placeholder{
+    color: #d2d2d7;
+}
+.publish-new-card-tbody{
+    height: 500px;
+}
+.publish-new-card-tbody textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding:18px;
+    /*color: #C5C7C9;*/
+}
+.publish-new-card-bottom{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fc8802;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    z-index: 99930;
+}

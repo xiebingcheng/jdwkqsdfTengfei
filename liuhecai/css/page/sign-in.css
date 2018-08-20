@@ -1,0 +1,148 @@
+
+/**
+    签到 css
+ */
+
+.sign-in-table-out{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+
+}
+.sign_succ_calendar_title{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    color: #262626;
+
+}
+.calendar_month_span{
+
+}
+.sign_succ_calendar_title span{
+    color: #dcdcdc;
+}
+/*表格布局*/
+/*.sign_row{*/
+    /*display: table-row;*/
+    /*width: 100%;*/
+/*}*/
+/*.sign_row div{*/
+    /*display: table-cell;*/
+    /*width: 3.2%;*/
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    /*text-align: center;*/
+    /*border-bottom: 1px solid #efeff4;*/
+/*}*/
+
+
+/* flex 布局*/
+.sign_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #efeff4;
+}
+.sign_row div{
+    width: 56px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.sign-in-what-day{
+    background-color: #efeff4;
+    color: #b6b6b7;
+}
+.sign-in-what-day div{
+    width: 56px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 12px;
+}
+.sign_equal .on{
+    background: url("../../img/sign-in/sign-succeed@2x.png") no-repeat center;
+    background-size: 20px 20px;
+}
+
+/*签到页用户功能模块 css*/
+
+.sign-in-user-function{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.sign-in-user-function-list{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #efeff4;
+}
+.sign-in-user-function-list>div{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    font-size: 12px;
+}
+.sign-in-user-function-list>div>span{
+    margin-left: 16px;
+    font-size: 14px;
+}
+.sign-in-user-function-list i{
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 10px;
+}
+.sign-in-user-function-list .sign-in-user-function-list-logo1{
+    background: url("../../img/sign-in/function-module-complete.png") no-repeat center;
+    background-size: cover;
+}
+.sign-in-user-function-list .sign-in-user-function-list-logo2{
+    background: url("../../img/sign-in/function-module-complete.png") no-repeat center;
+    background-size: cover;
+}
+.sign-in-user-function-list .sign-in-user-function-list-logo3{
+     background: url("../../img/sign-in/share@2x.png") no-repeat center;
+     background-size: cover;
+ }
+.sign-in-user-function-list .sign-in-user-function-list-logo4{
+    background: url("../../img/sign-in/function-module-complete.png") no-repeat center;
+    background-size: cover;
+}
+.sign-in-user-function-list .sign-in-user-function-list-logo5{
+    background: url("../../img/sign-in/follow-up@2x.png") no-repeat center;
+    background-size: cover;
+}
+.sign-in-user-function-list .sign-in-user-function-list-logo6{
+    background: url("../../img/sign-in/click-share@2x.png") no-repeat center;
+    background-size: cover;
+}
+.sign-in-user-function-list b{
+    width: 30px;
+    height: 15px;
+    line-height: 15px;
+    color: #fff;
+    background-color: #222222;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+/*遮罩层*/
+.sign-in-shade-box{
+    width: 100%;
+    height: 100%;
+    background: url("../../img/sign-in/sign-in-shade@2x.png") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

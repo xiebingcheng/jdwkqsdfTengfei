@@ -1,0 +1,72 @@
+
+/*
+    黑白图库 彩色图库 幽默图库 css
+ */
+figure{
+    margin: 0;
+}
+
+/*导航部分*/
+
+.heibai-img-depot-nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.heibai-img-depot-nav div{
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+.heibai-img-depot-nav div span{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 40%;
+    height: 100%;
+}
+.Nav-on{
+    border-bottom: 2px solid #FC8802;
+}
+
+/*主体部分*/
+/*图库*/
+.heibai-img-depot-tbody{
+    width: 100%;
+    height: auto;
+}
+.heibai-img-depot-tbody figure{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 8px 0;
+    padding:8px 0;
+}
+.heibai-img-depot-tbody figure img{
+    width: 120px;
+    height: 80px;
+    margin-left: 20px;
+}
+.heibai-img-depot-tbody figure div p{
+    color: #C5C7C9;
+}
+.heibai-img-depot-tbody figure span{
+    margin-right: 20px;
+    /*transform: scale(1,3);*/
+    color: #C5C7C9;
+}
+
+/*收藏*/
+#heibai-img-depot-tbody-collect figure span{
+    background: url("../../img/img-depot/attention.png") no-repeat center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
